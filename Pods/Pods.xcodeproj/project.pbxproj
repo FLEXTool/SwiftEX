@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008623CEDF9775DB8CFEE7B6C6F0C204 /* ProtocolTypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451E26C8EF181BB74F5906DC62D8759 /* ProtocolTypeContainer.swift */; };
+		031FFC9DBF4442AC5FA2D186C8695E93 /* Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB76D1F870B31B4A9D75C5E37016805C /* Pointers.swift */; };
+		094965BAE58F2BB385BF7D69363FDD4E /* Runtime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B18BFEBE062A1D177E376170D694CB /* Runtime-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C66B9A9854003E55C597537E5412217 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A71F7D3EDBD6CC1F62514216C0593 /* DefaultValue.swift */; };
+		184D623F095F696D20FF7D7761695D66 /* TypeInfoConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB956C464D9AA41D53EE48354936E568 /* TypeInfoConvertible.swift */; };
+		18FBE00B1597A4D0F3066ED031D22B29 /* ClassMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD67C18B8381F6E3C959ED5EB0AC1BD6 /* ClassMetadata.swift */; };
+		19E4B377010720BBB8F5D94FFE504015 /* PropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4801304461DF6389AF6C0C2749A2F6B0 /* PropertyInfo.swift */; };
+		26707B17F84FA7022907CE56CA511886 /* TypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CD9CA899E94823F1601E391734640 /* TypeDescriptor.swift */; };
+		27DC504E8089A4F4B100FC2E7C4C7650 /* StructTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9427738AF80A20DA7420F42C2EC1C /* StructTypeDescriptor.swift */; };
+		29ABFA6DC7D6C9A75DEEA2B02AE2DCE8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77846FE070D4E7E7751C88BDA3FBCF /* String+Extensions.swift */; };
+		2E4E52804881CB86126AFE1E17A1FDF8 /* EnumMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A4780281D0C7570877874ACF979B79 /* EnumMetadata.swift */; };
+		2FA0AEEFE071145A8FDD30A296439EBE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3963842594C7F6AF390B7C728C681 /* Errors.swift */; };
+		3B958FB68E267FD377D0670E0ACAE7DC /* GettersSetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03A2A8EEF9AA88FE7756CE3F56A62BE /* GettersSetters.swift */; };
+		4278AC8A7A5AA0CB4F5234C98FFBC468 /* ProtocolMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A66100FA74965592AF627E117CBBD4 /* ProtocolMetadataLayout.swift */; };
+		438A6BC26C1E96A9DA33FC14AF51A3F4 /* FieldDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6D039D6E4EE1203C5B4539BF4AB08 /* FieldDescriptor.swift */; };
+		55574BF18A0D3E353E4993818AEEE827 /* RetainCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC0DF968BD1C89690F1265F562B25 /* RetainCounts.swift */; };
+		571659B13CC5E39364E5A44A7B5DE67E /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62009E6EEBACB591D7D6C0BD18E2344 /* Vector.swift */; };
+		5D9A6DBD54250822088D19E5DD8BD152 /* FunctionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C4294073B0DFBDD05F3CD7115ED2C /* FunctionInfo.swift */; };
+		61A0A0D89BD7078C81D62BDB12978051 /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAACC5CE7F7DBC51682F4526B06E5C7F /* Kind.swift */; };
+		63683CAE73483807E5669A9F56D85BD9 /* StructMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E34AFA9C00C41633B7089E1784797 /* StructMetadata.swift */; };
+		73710E8E496EBEAF3A00E823626A0BA4 /* StructMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D77F249A7D42D873ECF953B06A6A1B /* StructMetadataLayout.swift */; };
+		73B21100C763A0102ABAA30FB4A4F7D6 /* Pods-SwiftEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC29C3E62F4F4BF91832BFAAB30E46 /* Pods-SwiftEX-dummy.m */; };
+		799BAE44FD0F84DB12FFB6D202C32F80 /* TupleMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B96BA1FF4C44AE96981E38474E68A /* TupleMetadataLayout.swift */; };
+		7E1A96E31674C41104ADD4801569E90C /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00558584AFE9227B858E5222D4732B9F /* Factory.swift */; };
+		852FA2BC951B805FC06BD4F9EE43A511 /* TypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B51A1C2EB75DEDAF4C7206EA4233D /* TypeInfo.swift */; };
+		8B34B66A62C83C10C200639EE4C7D29C /* NominalMetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F48E1C0CD9CB6DCF684952E7961E1C /* NominalMetadataType.swift */; };
+		8FC4868FADEA7C457B4D877D202B1F7F /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912E77F3B92F723A844D5F7C9A8239F /* Case.swift */; };
+		9015C291EB01D4070227529B0F324D89 /* ClassHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D0218C94D726DA370EE7E572DD7B6D /* ClassHeader.swift */; };
+		917EAA9B6833C4536AEF57D4FEB6E21C /* FunctionMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760196ED9D98F299FE4797E3DCFFBB2E /* FunctionMetadataLayout.swift */; };
+		92828C91EA3ADF26E13653792C227E9B /* Pointer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBC2B9BCA52E01ECDE861AD018C2AF /* Pointer+Extensions.swift */; };
+		9451D2AD65661D6E6CC203472766F3A0 /* TargetTypeGenericContextDescriptorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D210403EFB48D0523052BEACC667FC1 /* TargetTypeGenericContextDescriptorHeader.swift */; };
+		9BDAA843E9D3A427CFEE029DF2DF555E /* ValueWitnessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207FB3F4C30676053FF0BB3879F9E6E /* ValueWitnessTable.swift */; };
+		9C120CBDF78AB963F898BA0D1A3266FC /* ProtocolDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17845A67B56937189967D23D7FA8442A /* ProtocolDescriptor.swift */; };
+		9EEE79D3EC5A01DD43D5D8761DE99473 /* ExistentialContainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F70239A8A6548C6E6177B8C23C467A8 /* ExistentialContainter.swift */; };
+		9F37BD35250B583579F4218860E65008 /* MetadataLayoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE498D9061E28ABD3A356F6D78028820 /* MetadataLayoutType.swift */; };
+		A093EE98DC59AA738DC58AFAE98A7E7F /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607970D8114531B3F5CF8F1594F7062 /* Metadata.swift */; };
+		A4FF7851FA53757F59B9511FBD793691 /* Pods-SwiftEX-SwiftEXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DECC294C70A9B4D60B906C1F0EF1CD2 /* Pods-SwiftEX-SwiftEXTests-dummy.m */; };
+		B0160D037CA4DA6F2BE03E96C16CB7C0 /* CRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F7D137E8B0E5E88D9F34C83532D6C0 /* CRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9D7AC6F4B30DBA8A1E1CCC9F9AC18B3 /* Pods-SwiftEX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B90FA07495D52C1B30F534385122BAB /* Pods-SwiftEX-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC7062785DD16D2B90427366502BCBCE /* FuntionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4D4D5C646083869FAF8FC5F1BCF60 /* FuntionMetadata.swift */; };
+		C117F33435C4D9286708E653BD11B622 /* MetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C192C690BD9BEC85193790C7ECFA3AAB /* MetadataType.swift */; };
+		C472F8F5361E1F3AE5C3DB8DFF771A8D /* Pods-SwiftEX-SwiftEXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23576F089A97B497D0EABA539EDFB24B /* Pods-SwiftEX-SwiftEXTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5C14890D9BDFA9CEC7440491A10D109 /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D89B61998819D93DB8251278B4F634 /* Union.swift */; };
+		D1DF9918DEAF7A026EEEFA8BDD633B9C /* RelativeVectorPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182676CCF577575F6116302715FF8D3 /* RelativeVectorPointer.swift */; };
+		D2F3D51B998664B322928A80FC3DECBE /* ProtocolMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F263D699DF0EE6031458E5A8947E6 /* ProtocolMetadata.swift */; };
+		D69B36E429A759D8FE659D8732F14BA3 /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2BF7F603E9DC06C6C34D3A61D845F /* Runtime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9E94193647D94F3172EED8354BDDB58 /* EnumTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FD76C2CD8A467309232A2EC1BC5FB /* EnumTypeDescriptor.swift */; };
+		E3DB6A426D5F73E95D52CBFCCEC81F3A /* EnumMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0FFE246DA4F142DEB4FC495E5B32B /* EnumMetadataLayout.swift */; };
+		E701A67D0081DA37CBB72B98213ADE53 /* ClassMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F59C91EA30B45D6650847D81CFF7 /* ClassMetadataLayout.swift */; };
+		EE9156503D54F7439E1965C2FAABFCE2 /* RelativePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101A84F81932976A04AFF37331ECDD6 /* RelativePointer.swift */; };
+		EF38568E7F4C45EE8A8C764F45C5FF44 /* ClassTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611E4CBBE469F42D9D9231FD55F1455 /* ClassTypeDescriptor.swift */; };
+		F0A3AAD81F63B85D9719531D3FBE054F /* Runtime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0F71041BF38975E9F22CA9595A149 /* Runtime-dummy.m */; };
+		FD961504B953AB045AB909882FE00F16 /* TupleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C832C01CCB22B2C61E7928040E060 /* TupleMetadata.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EE5CC7D175775887C5A59C1BB6637C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F661334EDB92AABACF16A2BA56DB0FA0;
+			remoteInfo = Runtime;
+		};
+		84749B5706CEFFCC654A12EC5CE461F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F661334EDB92AABACF16A2BA56DB0FA0;
+			remoteInfo = Runtime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00558584AFE9227B858E5222D4732B9F /* Factory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Factory.swift; path = Sources/Runtime/Factory/Factory.swift; sourceTree = "<group>"; };
+		04D77F249A7D42D873ECF953B06A6A1B /* StructMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructMetadataLayout.swift; path = Sources/Runtime/Layouts/StructMetadataLayout.swift; sourceTree = "<group>"; };
+		0A4684DD64BD05C41CE0988B4E15DC0E /* Pods-SwiftEX-SwiftEXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEX-SwiftEXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AB3963842594C7F6AF390B7C728C681 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Runtime/Models/Errors.swift; sourceTree = "<group>"; };
+		1451E26C8EF181BB74F5906DC62D8759 /* ProtocolTypeContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolTypeContainer.swift; path = Sources/Runtime/Layouts/ProtocolTypeContainer.swift; sourceTree = "<group>"; };
+		16BBC2B9BCA52E01ECDE861AD018C2AF /* Pointer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Pointer+Extensions.swift"; path = "Sources/Runtime/Utilities/Pointer+Extensions.swift"; sourceTree = "<group>"; };
+		17845A67B56937189967D23D7FA8442A /* ProtocolDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolDescriptor.swift; path = Sources/Runtime/Layouts/ProtocolDescriptor.swift; sourceTree = "<group>"; };
+		18F7CA38B4A323F21665872FE1DD449F /* Pods-SwiftEX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEX.release.xcconfig"; sourceTree = "<group>"; };
+		1CCA44D955DB70DC50D639ADFDACB470 /* Runtime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Runtime.release.xcconfig; sourceTree = "<group>"; };
+		1D210403EFB48D0523052BEACC667FC1 /* TargetTypeGenericContextDescriptorHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetTypeGenericContextDescriptorHeader.swift; path = Sources/Runtime/Layouts/TargetTypeGenericContextDescriptorHeader.swift; sourceTree = "<group>"; };
+		1DECC294C70A9B4D60B906C1F0EF1CD2 /* Pods-SwiftEX-SwiftEXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftEX-SwiftEXTests-dummy.m"; sourceTree = "<group>"; };
+		23576F089A97B497D0EABA539EDFB24B /* Pods-SwiftEX-SwiftEXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftEX-SwiftEXTests-umbrella.h"; sourceTree = "<group>"; };
+		24672167AA8C79C540897942065A5ECD /* Pods-SwiftEX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftEX.modulemap"; sourceTree = "<group>"; };
+		2522E7734B52D1A413B8FE939D899931 /* libPods-SwiftEX-SwiftEXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SwiftEX-SwiftEXTests.a"; path = "libPods-SwiftEX-SwiftEXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607970D8114531B3F5CF8F1594F7062 /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = Sources/Runtime/Metadata/Metadata.swift; sourceTree = "<group>"; };
+		27CC29C3E62F4F4BF91832BFAAB30E46 /* Pods-SwiftEX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftEX-dummy.m"; sourceTree = "<group>"; };
+		2F4CD9CA899E94823F1601E391734640 /* TypeDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeDescriptor.swift; path = Sources/Runtime/Layouts/TypeDescriptor.swift; sourceTree = "<group>"; };
+		32A4D4D5C646083869FAF8FC5F1BCF60 /* FuntionMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FuntionMetadata.swift; path = Sources/Runtime/Metadata/FuntionMetadata.swift; sourceTree = "<group>"; };
+		36F48E1C0CD9CB6DCF684952E7961E1C /* NominalMetadataType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NominalMetadataType.swift; path = Sources/Runtime/Metadata/NominalMetadataType.swift; sourceTree = "<group>"; };
+		38B119271206D564C86FEDFEA66D07B2 /* Pods-SwiftEX-SwiftEXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftEX-SwiftEXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CA6D039D6E4EE1203C5B4539BF4AB08 /* FieldDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDescriptor.swift; path = Sources/Runtime/Layouts/FieldDescriptor.swift; sourceTree = "<group>"; };
+		47FFC0DF968BD1C89690F1265F562B25 /* RetainCounts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetainCounts.swift; path = Sources/Runtime/Utilities/RetainCounts.swift; sourceTree = "<group>"; };
+		4801304461DF6389AF6C0C2749A2F6B0 /* PropertyInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyInfo.swift; path = Sources/Runtime/Models/PropertyInfo.swift; sourceTree = "<group>"; };
+		4F70239A8A6548C6E6177B8C23C467A8 /* ExistentialContainter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExistentialContainter.swift; path = Sources/Runtime/Layouts/ExistentialContainter.swift; sourceTree = "<group>"; };
+		54D0218C94D726DA370EE7E572DD7B6D /* ClassHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHeader.swift; path = Sources/Runtime/Layouts/ClassHeader.swift; sourceTree = "<group>"; };
+		5855DB322BE67609C94B22BC9E37909A /* Pods-SwiftEX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEX.debug.xcconfig"; sourceTree = "<group>"; };
+		5C77846FE070D4E7E7751C88BDA3FBCF /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/Runtime/Utilities/String+Extensions.swift"; sourceTree = "<group>"; };
+		6182676CCF577575F6116302715FF8D3 /* RelativeVectorPointer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelativeVectorPointer.swift; path = Sources/Runtime/Pointers/RelativeVectorPointer.swift; sourceTree = "<group>"; };
+		618904D969FB2C095B901D3B07E1B850 /* Runtime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Runtime.debug.xcconfig; sourceTree = "<group>"; };
+		633C832C01CCB22B2C61E7928040E060 /* TupleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TupleMetadata.swift; path = Sources/Runtime/Metadata/TupleMetadata.swift; sourceTree = "<group>"; };
+		64C40BF0BED65561ED186457169668D5 /* Runtime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Runtime.modulemap; sourceTree = "<group>"; };
+		66B2BF7F603E9DC06C6C34D3A61D845F /* Runtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Runtime.h; path = Sources/Runtime/Runtime.h; sourceTree = "<group>"; };
+		6AD2578C915CE438479124CB4BBCC617 /* Pods-SwiftEX-SwiftEXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftEX-SwiftEXTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E0A71F7D3EDBD6CC1F62514216C0593 /* DefaultValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValue.swift; path = Sources/Runtime/Factory/DefaultValue.swift; sourceTree = "<group>"; };
+		7207FB3F4C30676053FF0BB3879F9E6E /* ValueWitnessTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueWitnessTable.swift; path = Sources/Runtime/Layouts/ValueWitnessTable.swift; sourceTree = "<group>"; };
+		75610052B3FAF9062D24FBBAAABB1B51 /* Pods-SwiftEX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEX-acknowledgements.plist"; sourceTree = "<group>"; };
+		760196ED9D98F299FE4797E3DCFFBB2E /* FunctionMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionMetadataLayout.swift; path = Sources/Runtime/Layouts/FunctionMetadataLayout.swift; sourceTree = "<group>"; };
+		7F3C4294073B0DFBDD05F3CD7115ED2C /* FunctionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionInfo.swift; path = Sources/Runtime/Models/FunctionInfo.swift; sourceTree = "<group>"; };
+		814B96BA1FF4C44AE96981E38474E68A /* TupleMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TupleMetadataLayout.swift; path = Sources/Runtime/Layouts/TupleMetadataLayout.swift; sourceTree = "<group>"; };
+		81E9427738AF80A20DA7420F42C2EC1C /* StructTypeDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructTypeDescriptor.swift; path = Sources/Runtime/Layouts/StructTypeDescriptor.swift; sourceTree = "<group>"; };
+		84D89B61998819D93DB8251278B4F634 /* Union.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Union.swift; path = Sources/Runtime/Pointers/Union.swift; sourceTree = "<group>"; };
+		9B90FA07495D52C1B30F534385122BAB /* Pods-SwiftEX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftEX-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D1F59C91EA30B45D6650847D81CFF7 /* ClassMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassMetadataLayout.swift; path = Sources/Runtime/Layouts/ClassMetadataLayout.swift; sourceTree = "<group>"; };
+		A62009E6EEBACB591D7D6C0BD18E2344 /* Vector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vector.swift; path = Sources/Runtime/Pointers/Vector.swift; sourceTree = "<group>"; };
+		A912E77F3B92F723A844D5F7C9A8239F /* Case.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Case.swift; path = Sources/Runtime/Models/Case.swift; sourceTree = "<group>"; };
+		AC4F263D699DF0EE6031458E5A8947E6 /* ProtocolMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolMetadata.swift; path = Sources/Runtime/Metadata/ProtocolMetadata.swift; sourceTree = "<group>"; };
+		B921767022E8522087A93A7126B42ADF /* Pods-SwiftEX-SwiftEXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftEX-SwiftEXTests.modulemap"; sourceTree = "<group>"; };
+		C101A84F81932976A04AFF37331ECDD6 /* RelativePointer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelativePointer.swift; path = Sources/Runtime/Pointers/RelativePointer.swift; sourceTree = "<group>"; };
+		C192C690BD9BEC85193790C7ECFA3AAB /* MetadataType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataType.swift; path = Sources/Runtime/Metadata/MetadataType.swift; sourceTree = "<group>"; };
+		C1F7D137E8B0E5E88D9F34C83532D6C0 /* CRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRuntime.h; path = Sources/CRuntime/include/CRuntime.h; sourceTree = "<group>"; };
+		C3BB59B771973FE30B7046768711907C /* libRuntime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRuntime.a; path = libRuntime.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B18BFEBE062A1D177E376170D694CB /* Runtime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Runtime-umbrella.h"; sourceTree = "<group>"; };
+		C93B51A1C2EB75DEDAF4C7206EA4233D /* TypeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeInfo.swift; path = Sources/Runtime/Models/TypeInfo.swift; sourceTree = "<group>"; };
+		CAACC5CE7F7DBC51682F4526B06E5C7F /* Kind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kind.swift; path = Sources/Runtime/Models/Kind.swift; sourceTree = "<group>"; };
+		D4A66100FA74965592AF627E117CBBD4 /* ProtocolMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolMetadataLayout.swift; path = Sources/Runtime/Layouts/ProtocolMetadataLayout.swift; sourceTree = "<group>"; };
+		D611E4CBBE469F42D9D9231FD55F1455 /* ClassTypeDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassTypeDescriptor.swift; path = Sources/Runtime/Layouts/ClassTypeDescriptor.swift; sourceTree = "<group>"; };
+		DB76D1F870B31B4A9D75C5E37016805C /* Pointers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pointers.swift; path = Sources/Runtime/Pointers/Pointers.swift; sourceTree = "<group>"; };
+		DE498D9061E28ABD3A356F6D78028820 /* MetadataLayoutType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataLayoutType.swift; path = Sources/Runtime/Layouts/MetadataLayoutType.swift; sourceTree = "<group>"; };
+		DE6BFB1B112D0B9E0A3A30876AD102FC /* Pods-SwiftEX-SwiftEXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftEX-SwiftEXTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEB39AA27F0A67206DD80299890DEC66 /* Runtime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Runtime-prefix.pch"; sourceTree = "<group>"; };
+		E03A2A8EEF9AA88FE7756CE3F56A62BE /* GettersSetters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GettersSetters.swift; path = Sources/Runtime/Utilities/GettersSetters.swift; sourceTree = "<group>"; };
+		E23E34AFA9C00C41633B7089E1784797 /* StructMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructMetadata.swift; path = Sources/Runtime/Metadata/StructMetadata.swift; sourceTree = "<group>"; };
+		E7A4780281D0C7570877874ACF979B79 /* EnumMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumMetadata.swift; path = Sources/Runtime/Metadata/EnumMetadata.swift; sourceTree = "<group>"; };
+		E9732CED97FCDB431BE37F1A81561C92 /* libPods-SwiftEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SwiftEX.a"; path = "libPods-SwiftEX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB956C464D9AA41D53EE48354936E568 /* TypeInfoConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeInfoConvertible.swift; path = Sources/Runtime/Models/TypeInfoConvertible.swift; sourceTree = "<group>"; };
+		EBEC97EC8D453A86355F2C4FE8C80C96 /* Pods-SwiftEX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftEX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F98FD76C2CD8A467309232A2EC1BC5FB /* EnumTypeDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTypeDescriptor.swift; path = Sources/Runtime/Layouts/EnumTypeDescriptor.swift; sourceTree = "<group>"; };
+		FAA0FFE246DA4F142DEB4FC495E5B32B /* EnumMetadataLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumMetadataLayout.swift; path = Sources/Runtime/Layouts/EnumMetadataLayout.swift; sourceTree = "<group>"; };
+		FD67C18B8381F6E3C959ED5EB0AC1BD6 /* ClassMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassMetadata.swift; path = Sources/Runtime/Metadata/ClassMetadata.swift; sourceTree = "<group>"; };
+		FEF0F71041BF38975E9F22CA9595A149 /* Runtime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Runtime-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BB399F9E6591825D4766C940AD1818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188A9EE6DDD1EC50651146AA23AE100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C549D4BD0AEE3C4FB8602F2463AC0134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EBED749918DF786D2323B9BEF57C977 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F10A4097B1004D0B6C8728CCF67C8489 /* Runtime */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78A215699738A1FD1813206999B5FE6A /* Pods-SwiftEX-SwiftEXTests */ = {
+			isa = PBXGroup;
+			children = (
+				B921767022E8522087A93A7126B42ADF /* Pods-SwiftEX-SwiftEXTests.modulemap */,
+				38B119271206D564C86FEDFEA66D07B2 /* Pods-SwiftEX-SwiftEXTests-acknowledgements.markdown */,
+				DE6BFB1B112D0B9E0A3A30876AD102FC /* Pods-SwiftEX-SwiftEXTests-acknowledgements.plist */,
+				1DECC294C70A9B4D60B906C1F0EF1CD2 /* Pods-SwiftEX-SwiftEXTests-dummy.m */,
+				23576F089A97B497D0EABA539EDFB24B /* Pods-SwiftEX-SwiftEXTests-umbrella.h */,
+				0A4684DD64BD05C41CE0988B4E15DC0E /* Pods-SwiftEX-SwiftEXTests.debug.xcconfig */,
+				6AD2578C915CE438479124CB4BBCC617 /* Pods-SwiftEX-SwiftEXTests.release.xcconfig */,
+			);
+			name = "Pods-SwiftEX-SwiftEXTests";
+			path = "Target Support Files/Pods-SwiftEX-SwiftEXTests";
+			sourceTree = "<group>";
+		};
+		7ADC40772C48852CB124C41FD1D0417F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E58A2DFD1498B8AD61F0B61DF0774679 /* Pods-SwiftEX */,
+				78A215699738A1FD1813206999B5FE6A /* Pods-SwiftEX-SwiftEXTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C6805E0E1AE7600612F045C1E4147D9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9732CED97FCDB431BE37F1A81561C92 /* libPods-SwiftEX.a */,
+				2522E7734B52D1A413B8FE939D899931 /* libPods-SwiftEX-SwiftEXTests.a */,
+				C3BB59B771973FE30B7046768711907C /* libRuntime.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				0EBED749918DF786D2323B9BEF57C977 /* Pods */,
+				C6805E0E1AE7600612F045C1E4147D9C /* Products */,
+				7ADC40772C48852CB124C41FD1D0417F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD92800A49E5330B6D90B55C6AB7A693 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64C40BF0BED65561ED186457169668D5 /* Runtime.modulemap */,
+				FEF0F71041BF38975E9F22CA9595A149 /* Runtime-dummy.m */,
+				DEB39AA27F0A67206DD80299890DEC66 /* Runtime-prefix.pch */,
+				C8B18BFEBE062A1D177E376170D694CB /* Runtime-umbrella.h */,
+				618904D969FB2C095B901D3B07E1B850 /* Runtime.debug.xcconfig */,
+				1CCA44D955DB70DC50D639ADFDACB470 /* Runtime.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Runtime";
+			sourceTree = "<group>";
+		};
+		E58A2DFD1498B8AD61F0B61DF0774679 /* Pods-SwiftEX */ = {
+			isa = PBXGroup;
+			children = (
+				24672167AA8C79C540897942065A5ECD /* Pods-SwiftEX.modulemap */,
+				EBEC97EC8D453A86355F2C4FE8C80C96 /* Pods-SwiftEX-acknowledgements.markdown */,
+				75610052B3FAF9062D24FBBAAABB1B51 /* Pods-SwiftEX-acknowledgements.plist */,
+				27CC29C3E62F4F4BF91832BFAAB30E46 /* Pods-SwiftEX-dummy.m */,
+				9B90FA07495D52C1B30F534385122BAB /* Pods-SwiftEX-umbrella.h */,
+				5855DB322BE67609C94B22BC9E37909A /* Pods-SwiftEX.debug.xcconfig */,
+				18F7CA38B4A323F21665872FE1DD449F /* Pods-SwiftEX.release.xcconfig */,
+			);
+			name = "Pods-SwiftEX";
+			path = "Target Support Files/Pods-SwiftEX";
+			sourceTree = "<group>";
+		};
+		F10A4097B1004D0B6C8728CCF67C8489 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				A912E77F3B92F723A844D5F7C9A8239F /* Case.swift */,
+				54D0218C94D726DA370EE7E572DD7B6D /* ClassHeader.swift */,
+				FD67C18B8381F6E3C959ED5EB0AC1BD6 /* ClassMetadata.swift */,
+				A1D1F59C91EA30B45D6650847D81CFF7 /* ClassMetadataLayout.swift */,
+				D611E4CBBE469F42D9D9231FD55F1455 /* ClassTypeDescriptor.swift */,
+				C1F7D137E8B0E5E88D9F34C83532D6C0 /* CRuntime.h */,
+				6E0A71F7D3EDBD6CC1F62514216C0593 /* DefaultValue.swift */,
+				E7A4780281D0C7570877874ACF979B79 /* EnumMetadata.swift */,
+				FAA0FFE246DA4F142DEB4FC495E5B32B /* EnumMetadataLayout.swift */,
+				F98FD76C2CD8A467309232A2EC1BC5FB /* EnumTypeDescriptor.swift */,
+				0AB3963842594C7F6AF390B7C728C681 /* Errors.swift */,
+				4F70239A8A6548C6E6177B8C23C467A8 /* ExistentialContainter.swift */,
+				00558584AFE9227B858E5222D4732B9F /* Factory.swift */,
+				3CA6D039D6E4EE1203C5B4539BF4AB08 /* FieldDescriptor.swift */,
+				7F3C4294073B0DFBDD05F3CD7115ED2C /* FunctionInfo.swift */,
+				760196ED9D98F299FE4797E3DCFFBB2E /* FunctionMetadataLayout.swift */,
+				32A4D4D5C646083869FAF8FC5F1BCF60 /* FuntionMetadata.swift */,
+				E03A2A8EEF9AA88FE7756CE3F56A62BE /* GettersSetters.swift */,
+				CAACC5CE7F7DBC51682F4526B06E5C7F /* Kind.swift */,
+				2607970D8114531B3F5CF8F1594F7062 /* Metadata.swift */,
+				DE498D9061E28ABD3A356F6D78028820 /* MetadataLayoutType.swift */,
+				C192C690BD9BEC85193790C7ECFA3AAB /* MetadataType.swift */,
+				36F48E1C0CD9CB6DCF684952E7961E1C /* NominalMetadataType.swift */,
+				16BBC2B9BCA52E01ECDE861AD018C2AF /* Pointer+Extensions.swift */,
+				DB76D1F870B31B4A9D75C5E37016805C /* Pointers.swift */,
+				4801304461DF6389AF6C0C2749A2F6B0 /* PropertyInfo.swift */,
+				17845A67B56937189967D23D7FA8442A /* ProtocolDescriptor.swift */,
+				AC4F263D699DF0EE6031458E5A8947E6 /* ProtocolMetadata.swift */,
+				D4A66100FA74965592AF627E117CBBD4 /* ProtocolMetadataLayout.swift */,
+				1451E26C8EF181BB74F5906DC62D8759 /* ProtocolTypeContainer.swift */,
+				C101A84F81932976A04AFF37331ECDD6 /* RelativePointer.swift */,
+				6182676CCF577575F6116302715FF8D3 /* RelativeVectorPointer.swift */,
+				47FFC0DF968BD1C89690F1265F562B25 /* RetainCounts.swift */,
+				66B2BF7F603E9DC06C6C34D3A61D845F /* Runtime.h */,
+				5C77846FE070D4E7E7751C88BDA3FBCF /* String+Extensions.swift */,
+				E23E34AFA9C00C41633B7089E1784797 /* StructMetadata.swift */,
+				04D77F249A7D42D873ECF953B06A6A1B /* StructMetadataLayout.swift */,
+				81E9427738AF80A20DA7420F42C2EC1C /* StructTypeDescriptor.swift */,
+				1D210403EFB48D0523052BEACC667FC1 /* TargetTypeGenericContextDescriptorHeader.swift */,
+				633C832C01CCB22B2C61E7928040E060 /* TupleMetadata.swift */,
+				814B96BA1FF4C44AE96981E38474E68A /* TupleMetadataLayout.swift */,
+				2F4CD9CA899E94823F1601E391734640 /* TypeDescriptor.swift */,
+				C93B51A1C2EB75DEDAF4C7206EA4233D /* TypeInfo.swift */,
+				EB956C464D9AA41D53EE48354936E568 /* TypeInfoConvertible.swift */,
+				84D89B61998819D93DB8251278B4F634 /* Union.swift */,
+				7207FB3F4C30676053FF0BB3879F9E6E /* ValueWitnessTable.swift */,
+				A62009E6EEBACB591D7D6C0BD18E2344 /* Vector.swift */,
+				DD92800A49E5330B6D90B55C6AB7A693 /* Support Files */,
+			);
+			name = Runtime;
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F25C4F295913074C5088B5A11587DAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0160D037CA4DA6F2BE03E96C16CB7C0 /* CRuntime.h in Headers */,
+				094965BAE58F2BB385BF7D69363FDD4E /* Runtime-umbrella.h in Headers */,
+				D69B36E429A759D8FE659D8732F14BA3 /* Runtime.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEE73842A5359F7CEB3C904C9EFC621 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C472F8F5361E1F3AE5C3DB8DFF771A8D /* Pods-SwiftEX-SwiftEXTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F9AE2B3A5FBE68B1A9CA2F8103627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D7AC6F4B30DBA8A1E1CCC9F9AC18B3 /* Pods-SwiftEX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26DCF21A59BE08155EE1AE2E3179FC93 /* Pods-SwiftEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08198A023315565DE6F675A13AAC7CAB /* Build configuration list for PBXNativeTarget "Pods-SwiftEX" */;
+			buildPhases = (
+				B41F9AE2B3A5FBE68B1A9CA2F8103627 /* Headers */,
+				2A319015AB9E6C56D8955DBEF0DF0CFF /* Sources */,
+				C549D4BD0AEE3C4FB8602F2463AC0134 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1CB353A392607B1AC1D142E788EE5D /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftEX";
+			productName = "Pods-SwiftEX";
+			productReference = E9732CED97FCDB431BE37F1A81561C92 /* libPods-SwiftEX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7D54D8AF4191DF532CF64BB7BC9B08D /* Pods-SwiftEX-SwiftEXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47B24709241CCAA9376B2B81F468AD8C /* Build configuration list for PBXNativeTarget "Pods-SwiftEX-SwiftEXTests" */;
+			buildPhases = (
+				3EEE73842A5359F7CEB3C904C9EFC621 /* Headers */,
+				67FFABCBAC341B2230AB557F76963535 /* Sources */,
+				5188A9EE6DDD1EC50651146AA23AE100 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC3AC63A9F9049E81C7DAE87E2DAF2B /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftEX-SwiftEXTests";
+			productName = "Pods-SwiftEX-SwiftEXTests";
+			productReference = 2522E7734B52D1A413B8FE939D899931 /* libPods-SwiftEX-SwiftEXTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F661334EDB92AABACF16A2BA56DB0FA0 /* Runtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46925166D4831B3A2ED3ABED03780B1D /* Build configuration list for PBXNativeTarget "Runtime" */;
+			buildPhases = (
+				2F25C4F295913074C5088B5A11587DAC /* Headers */,
+				961622FC4C1C319D7BB1C0579B9A38DF /* Sources */,
+				34BB399F9E6591825D4766C940AD1818 /* Frameworks */,
+				C4919EB25C2545DF1CFB0C50D4B9BAA8 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runtime;
+			productName = Runtime;
+			productReference = C3BB59B771973FE30B7046768711907C /* libRuntime.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C6805E0E1AE7600612F045C1E4147D9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26DCF21A59BE08155EE1AE2E3179FC93 /* Pods-SwiftEX */,
+				A7D54D8AF4191DF532CF64BB7BC9B08D /* Pods-SwiftEX-SwiftEXTests */,
+				F661334EDB92AABACF16A2BA56DB0FA0 /* Runtime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4919EB25C2545DF1CFB0C50D4B9BAA8 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Runtime/Runtime.modulemap",
+				"${PODS_ROOT}/Headers/Public/Runtime/Runtime-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Runtime-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Runtime/Runtime.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Runtime/Runtime-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A319015AB9E6C56D8955DBEF0DF0CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B21100C763A0102ABAA30FB4A4F7D6 /* Pods-SwiftEX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67FFABCBAC341B2230AB557F76963535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FF7851FA53757F59B9511FBD793691 /* Pods-SwiftEX-SwiftEXTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961622FC4C1C319D7BB1C0579B9A38DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC4868FADEA7C457B4D877D202B1F7F /* Case.swift in Sources */,
+				9015C291EB01D4070227529B0F324D89 /* ClassHeader.swift in Sources */,
+				18FBE00B1597A4D0F3066ED031D22B29 /* ClassMetadata.swift in Sources */,
+				E701A67D0081DA37CBB72B98213ADE53 /* ClassMetadataLayout.swift in Sources */,
+				EF38568E7F4C45EE8A8C764F45C5FF44 /* ClassTypeDescriptor.swift in Sources */,
+				0C66B9A9854003E55C597537E5412217 /* DefaultValue.swift in Sources */,
+				2E4E52804881CB86126AFE1E17A1FDF8 /* EnumMetadata.swift in Sources */,
+				E3DB6A426D5F73E95D52CBFCCEC81F3A /* EnumMetadataLayout.swift in Sources */,
+				D9E94193647D94F3172EED8354BDDB58 /* EnumTypeDescriptor.swift in Sources */,
+				2FA0AEEFE071145A8FDD30A296439EBE /* Errors.swift in Sources */,
+				9EEE79D3EC5A01DD43D5D8761DE99473 /* ExistentialContainter.swift in Sources */,
+				7E1A96E31674C41104ADD4801569E90C /* Factory.swift in Sources */,
+				438A6BC26C1E96A9DA33FC14AF51A3F4 /* FieldDescriptor.swift in Sources */,
+				5D9A6DBD54250822088D19E5DD8BD152 /* FunctionInfo.swift in Sources */,
+				917EAA9B6833C4536AEF57D4FEB6E21C /* FunctionMetadataLayout.swift in Sources */,
+				BC7062785DD16D2B90427366502BCBCE /* FuntionMetadata.swift in Sources */,
+				3B958FB68E267FD377D0670E0ACAE7DC /* GettersSetters.swift in Sources */,
+				61A0A0D89BD7078C81D62BDB12978051 /* Kind.swift in Sources */,
+				A093EE98DC59AA738DC58AFAE98A7E7F /* Metadata.swift in Sources */,
+				9F37BD35250B583579F4218860E65008 /* MetadataLayoutType.swift in Sources */,
+				C117F33435C4D9286708E653BD11B622 /* MetadataType.swift in Sources */,
+				8B34B66A62C83C10C200639EE4C7D29C /* NominalMetadataType.swift in Sources */,
+				92828C91EA3ADF26E13653792C227E9B /* Pointer+Extensions.swift in Sources */,
+				031FFC9DBF4442AC5FA2D186C8695E93 /* Pointers.swift in Sources */,
+				19E4B377010720BBB8F5D94FFE504015 /* PropertyInfo.swift in Sources */,
+				9C120CBDF78AB963F898BA0D1A3266FC /* ProtocolDescriptor.swift in Sources */,
+				D2F3D51B998664B322928A80FC3DECBE /* ProtocolMetadata.swift in Sources */,
+				4278AC8A7A5AA0CB4F5234C98FFBC468 /* ProtocolMetadataLayout.swift in Sources */,
+				008623CEDF9775DB8CFEE7B6C6F0C204 /* ProtocolTypeContainer.swift in Sources */,
+				EE9156503D54F7439E1965C2FAABFCE2 /* RelativePointer.swift in Sources */,
+				D1DF9918DEAF7A026EEEFA8BDD633B9C /* RelativeVectorPointer.swift in Sources */,
+				55574BF18A0D3E353E4993818AEEE827 /* RetainCounts.swift in Sources */,
+				F0A3AAD81F63B85D9719531D3FBE054F /* Runtime-dummy.m in Sources */,
+				29ABFA6DC7D6C9A75DEEA2B02AE2DCE8 /* String+Extensions.swift in Sources */,
+				63683CAE73483807E5669A9F56D85BD9 /* StructMetadata.swift in Sources */,
+				73710E8E496EBEAF3A00E823626A0BA4 /* StructMetadataLayout.swift in Sources */,
+				27DC504E8089A4F4B100FC2E7C4C7650 /* StructTypeDescriptor.swift in Sources */,
+				9451D2AD65661D6E6CC203472766F3A0 /* TargetTypeGenericContextDescriptorHeader.swift in Sources */,
+				FD961504B953AB045AB909882FE00F16 /* TupleMetadata.swift in Sources */,
+				799BAE44FD0F84DB12FFB6D202C32F80 /* TupleMetadataLayout.swift in Sources */,
+				26707B17F84FA7022907CE56CA511886 /* TypeDescriptor.swift in Sources */,
+				852FA2BC951B805FC06BD4F9EE43A511 /* TypeInfo.swift in Sources */,
+				184D623F095F696D20FF7D7761695D66 /* TypeInfoConvertible.swift in Sources */,
+				C5C14890D9BDFA9CEC7440491A10D109 /* Union.swift in Sources */,
+				9BDAA843E9D3A427CFEE029DF2DF555E /* ValueWitnessTable.swift in Sources */,
+				571659B13CC5E39364E5A44A7B5DE67E /* Vector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C1CB353A392607B1AC1D142E788EE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Runtime;
+			target = F661334EDB92AABACF16A2BA56DB0FA0 /* Runtime */;
+			targetProxy = 2EE5CC7D175775887C5A59C1BB6637C0 /* PBXContainerItemProxy */;
+		};
+		EFC3AC63A9F9049E81C7DAE87E2DAF2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Runtime;
+			target = F661334EDB92AABACF16A2BA56DB0FA0 /* Runtime */;
+			targetProxy = 84749B5706CEFFCC654A12EC5CE461F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3E5B792F8A5EF7563D6E057079215448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F7CA38B4A323F21665872FE1DD449F /* Pods-SwiftEX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftEX/Pods-SwiftEX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FB8F30A184737C130C1B9FBD754A4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618904D969FB2C095B901D3B07E1B850 /* Runtime.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Runtime/Runtime-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Runtime/Runtime.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Runtime;
+				PRODUCT_NAME = Runtime;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B436C32299C422E1EB000FB3C0302F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCA44D955DB70DC50D639ADFDACB470 /* Runtime.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Runtime/Runtime-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Runtime/Runtime.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Runtime;
+				PRODUCT_NAME = Runtime;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B887C27E8384F718E9B3CDF5B0B10304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD2578C915CE438479124CB4BBCC617 /* Pods-SwiftEX-SwiftEXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftEX-SwiftEXTests/Pods-SwiftEX-SwiftEXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DDB5B92133C41248F090515FA0EFD0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4684DD64BD05C41CE0988B4E15DC0E /* Pods-SwiftEX-SwiftEXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftEX-SwiftEXTests/Pods-SwiftEX-SwiftEXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50755C511AEEFC7F974C96A610C0BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5855DB322BE67609C94B22BC9E37909A /* Pods-SwiftEX.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftEX/Pods-SwiftEX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08198A023315565DE6F675A13AAC7CAB /* Build configuration list for PBXNativeTarget "Pods-SwiftEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50755C511AEEFC7F974C96A610C0BF2 /* Debug */,
+				3E5B792F8A5EF7563D6E057079215448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46925166D4831B3A2ED3ABED03780B1D /* Build configuration list for PBXNativeTarget "Runtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB8F30A184737C130C1B9FBD754A4B2 /* Debug */,
+				B436C32299C422E1EB000FB3C0302F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47B24709241CCAA9376B2B81F468AD8C /* Build configuration list for PBXNativeTarget "Pods-SwiftEX-SwiftEXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB5B92133C41248F090515FA0EFD0D5 /* Debug */,
+				B887C27E8384F718E9B3CDF5B0B10304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

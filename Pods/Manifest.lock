@@ -1,0 +1,16 @@
+PODS:
+  - Runtime (2.2.2)
+
+DEPENDENCIES:
+  - Runtime
+
+SPEC REPOS:
+  trunk:
+    - Runtime
+
+SPEC CHECKSUMS:
+  Runtime: 67741bd196fb4ad821c4d259ccc527bf734d8806
+
+PODFILE CHECKSUM: 721f448d436f7b5b3e90da69bda87511e121b76a
+
+COCOAPODS: 1.10.0

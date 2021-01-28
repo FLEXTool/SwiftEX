@@ -1,0 +1,6 @@
+module Pods_SwiftEX {
+  umbrella header "Pods-SwiftEX-umbrella.h"
+
+  export *
+  module * { export * }
+}
